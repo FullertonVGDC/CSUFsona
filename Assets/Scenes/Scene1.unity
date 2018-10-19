@@ -113,47 +113,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &615945210
+--- !u!1001 &1045155308
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -51.6
+      value: -50.1
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 76.2
+      value: 53.6
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4181614459040792, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922757111827300, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
+      propertyPath: m_Name
+      value: DungeonRoomBattle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661335816836752, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 314ea3e09ff5b6547a72c0c52b2ed5fb, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 881e229dde2c7c14080fe8d8f608c368, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1272539742 stripped
 GameObject:
@@ -275,9 +287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2f22e1599b34843bf44ff1a4947f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  moveSpeed: 5
 --- !u!114 &1395003329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +337,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196517852640508, guid: 821a24278702a3f4f89564f507c1cf34, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212786945224820164, guid: 821a24278702a3f4f89564f507c1cf34,
         type: 2}
@@ -339,6 +348,16 @@ Prefab:
         type: 2}
       propertyPath: move_speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 212786945224820164, guid: 821a24278702a3f4f89564f507c1cf34,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -791678983
+      objectReference: {fileID: 0}
+    - target: {fileID: 212786945224820164, guid: 821a24278702a3f4f89564f507c1cf34,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114251541256353344, guid: 821a24278702a3f4f89564f507c1cf34, type: 2}
