@@ -23,3 +23,7 @@ Writing:
 -create a story screen for the beginning of the game
 -create story text for Remmy's progression.
   - his thoughts/observations will tell the story.
+-------------------------------------
+final game done its in gamedonefinal folder
+
+-gordenonemmachrintinjesusstevem
