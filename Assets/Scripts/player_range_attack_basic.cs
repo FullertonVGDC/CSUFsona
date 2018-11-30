@@ -83,7 +83,7 @@ public class player_range_attack_basic : MonoBehaviour
             {
                 current_projectile.GetComponent<SpriteRenderer>().color = Color.red;
             }
-            print(hotkey_holded_iterator);
+            //print(hotkey_holded_iterator);
             yield return new WaitForSeconds(charging_attack_tick_delay);
             hotkey_holded_iterator += 1;
         }
