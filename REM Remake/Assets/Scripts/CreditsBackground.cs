@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CreditsBackground : MonoBehaviour {
 
@@ -17,5 +18,10 @@ public class CreditsBackground : MonoBehaviour {
         // transform.Rotate(Vector3.right * Time.deltaTime);
         // transform.Rotate(Vector3.up * Time.deltaTime, Space.World);
         transform.Rotate(new Vector3(0, 0, 1));
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
 	}
 }

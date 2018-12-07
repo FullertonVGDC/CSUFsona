@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EdwardVaughnControl : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class EdwardVaughnControl : MonoBehaviour
     {
         Cycle();
         transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
-    //    Jump();
+        //    Jump();
+
+        Ending();
     }
 
     public void Cycle()
@@ -60,5 +63,13 @@ public class EdwardVaughnControl : MonoBehaviour
     {
 
         rigid.velocity = new Vector2(0, jumpForce);
+    }
+
+    public void Ending()
+    {
+        if (rigid.position.y < -80)
+        {
+            SceneManager.LoadScene("GoodEnd");
+        }
     }
 }

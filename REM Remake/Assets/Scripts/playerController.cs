@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour {
-    float walkSpeed = 10;
+    float walkSpeed = 9;
     Rigidbody2D rigid;
     float lockPos = 0;
     float jumpForce = 20;
     int jumpCount = 0;
     int maxJumps = 1;
+    public bool isOnGround = false;
+    public bool isDoubleJump = true;
 
     public GameObject shurikenPrefab;
     public Transform shurikenSpawn;
@@ -21,6 +24,7 @@ public class playerController : MonoBehaviour {
         //player = GetComponent<Animator>();
         jumpCount = maxJumps;
         anim = gameObject.GetComponent<Animator>();
+        
 		
 	}
 
@@ -29,13 +33,14 @@ public class playerController : MonoBehaviour {
 
         Walk();
         transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
-        Jump();
+       // Jump(); doesn't do jack no more
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Fire();
         }
         CameraView();
         Animation();
+        BadEnding();
     }
 
     private void Walk()
@@ -50,22 +55,50 @@ public class playerController : MonoBehaviour {
     {
         if(Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (rigid.position.y > -1)
+            if (isDoubleJump)
             {
-                rigid.velocity = new Vector2(0, 0);
-            } else
-            {
+                isDoubleJump = false;
                 rigid.velocity = new Vector2(0, jumpForce);
             }
-            
+            //if(isOnGround)
+            {
+                isOnGround = false;
+                isDoubleJump = true;
+                rigid.velocity = new Vector2(0, jumpForce);
 
-           
-           // jumpCount -= 1;
+            }
+
+
+           // rigid.velocity = new Vector2(0, jumpForce);
+            //jumpCount = 1;
+           // isGrounded = false;
+
+           // waitTime();
 
         }
         
     }
-
+/*
+    private void waitTime()
+    {
+        int i = 3;
+        i--;
+        if(i == 0)
+        {
+            isGrounded = true;
+            i = 3;
+        }
+    }*/
+    /*
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == ("Ground") && isGrounded == false)
+        {
+            isGrounded = true;
+        }
+    }
+    */
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.tag == "Ground")
@@ -73,7 +106,7 @@ public class playerController : MonoBehaviour {
             jumpCount = maxJumps;
         }
     }
-
+    */
     void Fire()
     {
         var shuriken = (GameObject)Instantiate(shurikenPrefab, shurikenSpawn.position, shurikenSpawn.rotation);
@@ -113,6 +146,14 @@ public class playerController : MonoBehaviour {
         if(Input.GetKeyUp(KeyCode.LeftArrow))
         {
             anim.SetBool("leftKeyPressed", false);
+        }
+    }
+
+    public void BadEnding()
+    {
+        if (rigid.position.y < -100)
+        {
+            SceneManager.LoadScene("BadEnd");
         }
     }
 }

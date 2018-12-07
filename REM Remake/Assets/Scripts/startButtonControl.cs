@@ -7,7 +7,7 @@ public class startButtonControl : MonoBehaviour {
 
     public void StartButton()
     {
-        SceneManager.LoadScene("gameScene");//,LoadSceneMode.Single);
+        SceneManager.LoadScene("Intro transition");//,LoadSceneMode.Single);
     }
     
     public void CreditsButton()
