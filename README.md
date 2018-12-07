@@ -16,6 +16,7 @@ What started off chaotic underwent many iterations and confusions, but finally, 
 <br>Steven Tran
 <br>Jesus Rodriguez
 <br>Andrew De La Fuente
+<br>Gordon Dan
 
 <br><b>Music</b>
 <br>Leonel Cazares
