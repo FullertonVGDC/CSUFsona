@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1803754741629924}
+  m_IsPrefabAsset: 1
+--- !u!1 &1180137693654682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4857605164921558}
+  m_Layer: 0
+  m_Name: Shuriken Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1803754741629924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4322209745209836}
+  - component: {fileID: 212306798789063064}
+  - component: {fileID: 50819700395494826}
+  - component: {fileID: 60991469980989220}
+  - component: {fileID: 114121567433660924}
+  m_Layer: 0
+  m_Name: Remmy 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4322209745209836
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803754741629924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.308332, y: -1.485, z: 0}
+  m_LocalScale: {x: 0.7015, y: 0.7015, z: 0}
+  m_Children:
+  - {fileID: 4857605164921558}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4857605164921558
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180137693654682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4322209745209836}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50819700395494826
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803754741629924}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 5
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &60991469980989220
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803754741629924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.41, y: 4.1099997}
+    newSize: {x: 2.41, y: 4.1099997}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.82615244, y: -0.7656152}
+      - {x: 0.64158213, y: -0.47557616}
+      - {x: 0.5361134, y: -0.34374022}
+      - {x: 0.39109385, y: -0.30418944}
+      - {x: 0.37791026, y: 0.051767573}
+      - {x: 0.9184376, y: 0.025400385}
+      - {x: 1.1030079, y: 0.2099707}
+      - {x: 1.2084767, y: 0.6318457}
+      - {x: 1.2084767, y: 1.4887793}
+      - {x: 1.0898243, y: 1.5151465}
+      - {x: 1.1030079, y: 1.7656348}
+      - {x: 0.9579884, y: 1.9238379}
+      - {x: 0.7075001, y: 2.0556738}
+      - {x: -0.62404287, y: 2.0556738}
+      - {x: -0.7954296, y: 1.9633887}
+      - {x: -1.072285, y: 1.6206152}
+      - {x: -1.204121, y: 1.3173926}
+      - {x: -1.204121, y: 0.34180665}
+      - {x: -1.0459179, y: 0.27588868}
+      - {x: -0.8086132, y: 0.03858398}
+      - {x: -0.47902334, y: -0.09325196}
+      - {x: -0.3471874, y: -0.09325196}
+      - {x: -0.3208202, y: -0.06688477}
+      - {x: -0.360371, y: -0.2119043}
+      - {x: -0.5185741, y: -0.34374022}
+      - {x: -1.1250194, y: -1.5961816}
+      - {x: -1.204121, y: -1.8862207}
+      - {x: -1.204121, y: -2.0576074}
+      - {x: 0.4965626, y: -2.0576074}
+      - {x: 0.549297, y: -1.8862207}
+      - {x: 0.5097462, y: -1.8071191}
+      - {x: 0.79978526, y: -1.3193262}
+--- !u!114 &114121567433660924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803754741629924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91be6aeabd45a3142967b4b614b88d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shurikenPrefab: {fileID: 1869964484868662, guid: b571a8ac68e682743815eb44d7f8f8e5,
+    type: 2}
+  shurikenSpawn: {fileID: 4857605164921558}
+--- !u!212 &212306798789063064
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803754741629924}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -41586589
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300014, guid: f66e0367b2d163442850015b88ce700c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.41, y: 4.1099997}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
