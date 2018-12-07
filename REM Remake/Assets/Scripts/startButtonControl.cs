@@ -7,6 +7,15 @@ public class startButtonControl : MonoBehaviour {
 
     public void StartButton()
     {
-        SceneManager.LoadScene("gameScene",LoadSceneMode.Single);
+        SceneManager.LoadScene("gameScene");//,LoadSceneMode.Single);
+    }
+    
+    public void CreditsButton()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 }

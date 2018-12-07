@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\cameraController.cs" />
+    <Compile Include="Assets\Scripts\CreditsBackground.cs" />
     <Compile Include="Assets\Scripts\EdwardVaughnControl.cs" />
     <Compile Include="Assets\Scripts\hitTrigger.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
@@ -69,16 +70,16 @@
     <Compile Include="Assets\Scripts\shurikenThrow.cs" />
     <Compile Include="Assets\Scripts\startButtonControl.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/jrjss/OneDrive/Documents/GitHub/git_workshop/REM Remake/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/jrjss/OneDrive/Desktop/VGDC/REM/REM Remake/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/jrjss/OneDrive/Documents/GitHub/git_workshop/REM Remake/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/jrjss/OneDrive/Desktop/VGDC/REM/REM Remake/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/jrjss/OneDrive/Documents/GitHub/git_workshop/REM Remake/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/jrjss/OneDrive/Desktop/VGDC/REM/REM Remake/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/jrjss/OneDrive/Documents/GitHub/git_workshop/REM Remake/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/jrjss/OneDrive/Desktop/VGDC/REM/REM Remake/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
