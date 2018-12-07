@@ -63,12 +63,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\cameraController.cs" />
     <Compile Include="Assets\Scripts\CreditsBackground.cs" />
+    <Compile Include="Assets\Scripts\displayText.cs" />
     <Compile Include="Assets\Scripts\EdwardVaughnControl.cs" />
     <Compile Include="Assets\Scripts\hitTrigger.cs" />
+    <Compile Include="Assets\Scripts\IntroTransitionScript.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
     <Compile Include="Assets\Scripts\sheepWalk.cs" />
     <Compile Include="Assets\Scripts\shurikenThrow.cs" />
     <Compile Include="Assets\Scripts\startButtonControl.cs" />
+    <Compile Include="Assets\Scripts\typingScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/jrjss/OneDrive/Desktop/VGDC/REM/REM Remake/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
